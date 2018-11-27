@@ -10,5 +10,8 @@ $('.stars02').stars({
 });
 
 starsNum: 星星数量
+
 initNum: 初始化分数
+
 returnFraction(): 返回最终分数
+
