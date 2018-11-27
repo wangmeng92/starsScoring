@@ -1,0 +1,132 @@
+html {
+  /*谷歌浏览器字体最小字体12px*/
+  -webkit-text-size-adjust: 100%;
+  /*100%/none 关闭字体大小自动调整功能*/
+  /*a标签及拥有 :active伪类的元素有默认的高亮框*/
+  -webkit-tap-highlight-color: transparent;
+  /*禁止文本被选中*/
+  -webkit-user-select: none;
+  width: 100%;
+}
+body {
+  margin: 0 auto;
+  /*开启moblie网页快速滚动和回弹的效果*/
+  -webkit-overflow-scrolling: touch;
+  font-size: 16px;
+  color: #333;
+}
+body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,select,option,
+table,tr,th,td,span,i,em,audio,video,img,section,article,a,font {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  vertical-align: baseline;
+  background: transparent;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+em,i {
+  font-style: normal;
+}
+body,html,input {
+  font-family: "PingFangSC-Regular", "Microsoft YaHei", "SimHei", "PMingLiU", Arial, "Lucida Grande", sans-serif, "STHeiti Light";
+}
+form,input,label,img,th {
+  vertical-align: middle;
+}
+textarea {
+  resize: none;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #b6b6b6;
+}
+input, button, select, textarea {  /*默认样式设置*/
+  display: block; 
+  background-color: none;
+  outline: none;  /*去掉chrome浏览器自带的点击input框出现边框情况*/
+  -webkit-appearance: none;  /*去掉按钮样式*/
+  border-radius: 0; /*去掉圆角*/
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+del {
+  text-decoration: line-through;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+ul,ol,li,dl,dt,dd {
+  list-style: none;
+}
+
+a:link {
+  color: #333;
+  text-decoration: none;
+}
+a:visited {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+/*清除浮动*/
+.clearfix:after {
+  content: ".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+.clearfix {
+  zoom:1;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+
+
+
+
+.wm-stars-box {
+  display: flex;
+  width: 100%;
+}
+.wm-lab{
+  margin-right: 10px;
+  height: 40px;  
+  line-height: 40px;
+}
+.wm-view {
+  display: flex;
+}
+.wm-view .wm-stars {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
+}
+.wm-view .wm-gray {
+  background-image: url("../images/ico_xx_h.png");
+}
+.wm-view .wm-yellow {
+  background-image: url("../images/ico_xx_gl.png");
+}
+
+

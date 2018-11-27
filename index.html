@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+
+    <!-- <script type="text/javascript" src="js/flexible.js"></script> -->
+    <title>星星打分</title>
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="stars01 wm-stars-box">
+        <div class="wm-lab">商家服务</div>
+        <div class="wm-view"></div>
+    </div>
+    <div class="stars02 wm-stars-box">
+        <div class="wm-lab">物流快递</div>
+        <div class="wm-view"></div>
+    </div>
+
+    <script type="text/javascript" src="js/stars.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.stars01').stars({
+                returnFraction: function( frac ){
+                    console.log( frac );
+                }
+            });
+            $('.stars02').stars({
+                starsNum: 6,
+                initNum: 1,
+                returnFraction: function( frac ){
+                    console.log( frac );
+                }
+            });
+        });
+    </script>
+</body>
+</html>
